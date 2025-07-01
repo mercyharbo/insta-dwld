@@ -252,7 +252,7 @@ export default function Home() {
                           )}
 
                           {/* Overlay on hover */}
-                          <div className='absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end justify-center pb-4'>
+                          <div className='absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end justify-center pb-4 opacity-100 transition-all duration-300'>
                             <Button
                               className='bg-white text-gray-800 hover:bg-gray-100 shadow-xl font-semibold border-2 border-white/20'
                               onClick={async (e) => {
@@ -342,7 +342,7 @@ export default function Home() {
                           />
                         )}
                         {/* Overlay on hover */}
-                        <div className='absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end justify-center pb-4'>
+                        <div className='absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end justify-center pb-4 opacity-100 transition-all duration-300'>
                           <Button
                             className='bg-white text-gray-800 hover:bg-gray-100 shadow-xl font-semibold border-2 border-white/20'
                             onClick={async (e) => {
