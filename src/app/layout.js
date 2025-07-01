@@ -28,11 +28,11 @@ export const metadata = {
     title: 'Instagram Photo & Video Downloader | InstaDWL',
     description:
       'Download Instagram photos, videos, reels, and stories easily with InstaDWL.',
-    url: 'https://your-domain.com',
+    url: 'https://insta-dwld.vercel.app/',
     siteName: 'InstaDWL',
     images: [
       {
-        url: 'http://localhost:3000/',
+        url: 'https://insta-dwld.vercel.app/seo-image.png',
         width: 1200,
         height: 630,
         alt: 'InstaDWL - Instagram Downloader',
@@ -45,7 +45,7 @@ export const metadata = {
     title: 'Instagram Photo & Video Downloader | InstaDWL',
     description:
       'Download Instagram photos, videos, reels, and stories easily with InstaDWL.',
-    images: ['https://your-domain.com/seo-image.png'],
+    images: ['https://insta-dwld.vercel.app//seo-image.png'],
   },
 }
 
