@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# InstaDWL - Instagram Photo & Video Downloader
+
+InstaDWL is a modern web app built with Next.js that allows you to download Instagram photos, videos, reels, and stories easily and securely. Paste any Instagram post, reel, or story URL and instantly get high-quality media files for download.
+
+## Features
+
+- Download Instagram photos, videos, reels, and stories
+- Supports both single and multiple media posts (albums)
+- Fast, secure, and free
+- Beautiful, responsive UI
+- No watermarks
+- Direct download to your device (no new tab)
+- Video preview with thumbnail and player
+- SEO optimized
+
+## How It Works
+
+1. Paste an Instagram URL into the input box.
+2. Click the **Download** button.
+3. The app fetches media info using a RapidAPI-powered backend.
+4. All images and videos are displayed in a grid with preview and download buttons.
+5. Click the download button to save the media directly to your device.
+
+## Tech Stack
+
+- [Next.js 14+](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Lucide Icons](https://lucide.dev/)
+- [RapidAPI Instagram Downloader](https://rapidapi.com/)
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/insta-dwl.git
+   cd insta-dwl
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or yarn install
+   ```
+3. **Set up environment variables:**
+   - Create a `.env.local` file in the root directory.
+   - Add your RapidAPI credentials:
+     ```env
+     NEXT_PUBLIC_API_URL=your_rapidapi_endpoint
+     NEXT_PUBLIC_API_KEY=your_rapidapi_key
+     NEXT_PUBLIC_HOSTNAME=your_rapidapi_hostname
+     ```
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   # or yarn dev
+   ```
+5. **Open [http://localhost:3000](http://localhost:3000) in your browser.**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Deployment
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Deploy easily on [Vercel](https://vercel.com/) or any platform that supports Next.js.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Folder Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/app/` - Main app directory
+  - `page.js` - Main page logic and UI
+  - `layout.js` - App layout and SEO
+  - `api/proxy/route.js` - Proxy route for secure media downloads
+  - `components/ui/` - UI components (Badge, Button, Card, Input)
+  - `lib/utils.js` - Utility functions
+- `public/` - Static assets (including `seo-image.png` for SEO)
 
-## Learn More
+## Security & Limitations
 
-To learn more about Next.js, take a look at the following resources:
+- All media is proxied through a secure API route to avoid CORS and CDN hostname issues.
+- This project is for educational/personal use. Respect Instagram's terms of service.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Credits
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- UI inspired by modern design systems.
+- Built by [Code With Mercy](https://github.com/your-profile).
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feel free to contribute or open issues for suggestions and improvements!
